@@ -1,11 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Number Guessing Game</title>
+    <link rel="stylesheet" href="Assest/style.css">
 </head>
+
 <body>
-    
+    <div class="game">
+        <h1>Number Guessing Game</h1>
+
+        <p>Guess a number between 1 and 10</p>
+
+        <input type="number" id="guessInput" placeholder="Enter your guess">
+
+        <button id="guessButton" value="Guess" onclick="btnCheckGuessOnActiin()">Guess</button>
+
+        <p id="message">Enter your guess to start!</p>
+
+        <p>Attempts: <span id="attempts">0</span></p>
+
+        <button id="restartButton" value="restart" onclick="btnRestartGameOnAction()">Restart Game</button>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="Assest/app.js"></script>
 </body>
+
 </html>
